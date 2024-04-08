@@ -1,0 +1,6 @@
+selenium
+pandas
+seaborn
+requests
+tqdm
+-e .
