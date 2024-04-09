@@ -10,13 +10,14 @@ from src.utils import save_object
 from src.components.hotel_list_extraction import Hotel_List_Extraction
 from src.components.data_transformation import Data_Transformation
 from src.components.reviews_extraction import Reviews_Extraction
+from src.components.sentiment_analysis import Sentiment_Analysis
 
 #: creaeting webdriver
 
 
 class initiate_data_ingestion:
   def __init__(self):
-    print('*************************************************************************DATA INGESTION INITIATED****************************************************************************')
+    print('*****************************gon********************************************DATA INGESTION INITIATED****************************************************************************')
     print('\n')
     pass
   
@@ -107,9 +108,9 @@ if __name__=="__main__":
   obj3=Data_Transformation()
   df=obj3.initiate_transformation(df)
   obj4=Reviews_Extraction()
-  obj4.initiate_review_extraction(df)
+  review_df=obj4.initiate_review_extraction(df)
+  obj5=Sentiment_Analysis()
+  review_df=obj5.sentiment_analysis(review_df)
+  obj5.aggregate_review_with_dataframe(review_df,df)
 
   
-
-
-

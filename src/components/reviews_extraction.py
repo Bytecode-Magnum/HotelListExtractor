@@ -129,8 +129,9 @@ class Reviews_Extraction:
             'Review extraction completed..........'
         )
         print('***************************************************************REVIEWS EXTRACTION COMPLETED****************************************************')
-        print('***************************************************************CONGRATULATION******************************************************************')
-
+       
+        return review_df
+      
       except Exception as e:
           raise CustomException(e,sys)
 

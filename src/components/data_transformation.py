@@ -23,11 +23,11 @@ class Data_Transformation:
         for i, id in df['id'].items():
           url= f"https://www.goibibo.com/hotels/odin-hostels-hotel-in-jibhi-{id}/?hquery={{%22ci%22:%2220240410%22,%22co%22:%2220240411%22,%22r%22:%221-2-0%22,%22ibp%22:%22%22}}&cc=IN&vcid=4926068515457680357&locusId=CTJIBH&locusType=city&cityCode=CTJIBH"
           df.loc[i, 'hotel_link'] = url
-        print('DATA TRANSFORMATION ENDED, PROVIDE A NEW FILENAME FOR SAVING UPDATED DATAFRAME')
-        _name=input('ENTER THE NAME FOR UPDATED DATAFRAME.....')
+        print('DATA TRANSFORMATION ENDED, PROVIDE A NEW FILENAME FOR SAVING UPDATED DATAFRAME\n')
+        _name=input('DATAFRAME HAS BEEN CLEANED ENTER THE NEW  NAME FOR UPDATED DATAFRAME.....')
         full_path=r'C:\Users\ankit\Desktop\HotelList\artifacts\data\{0}'.format(_name)
         save_dataframe(full_path,df)
-        print('**************************************************DATA TRANSFORMATION ENDEd ****************************************************************************************************')
+        print('**************************************************DATA TRANSFORMATION ENDED ****************************************************************************************************')
         print('\n')
         logging.info(
           'data transformation ended....'
