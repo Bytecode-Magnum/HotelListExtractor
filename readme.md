@@ -28,10 +28,14 @@ git clone https://github.com/your-username/hotel-review-sentiment-analysis.git
 
 * Fistly install the dependencies
 
- ``` pip install -r requirements.txt ```
+ ``` 
+ pip install -r requirements.txt
+  ```
 
 * Run Data Ingestion.py file
-``` python run data_ingestion.py```
+``` 
+python run data_ingestion.py 
+```
 
 
 
