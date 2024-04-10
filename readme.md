@@ -10,7 +10,11 @@ The project used modular coding techniques, oops and classes to divide different
 * Hotel List Extraction: The program then iterates through the list of hotels and extracts necessary  details of each hotels
 * Review Extraction: For each hotel URL, the program extracts the reviews for that hotel.
 * Sentiment Analysis: The program then performs sentiment analysis on the extracted reviews using a hugging face pre trained model.
+* Util: For the utilities function which will be used quite often in the program.
+* Exception:- This is used for creating a custom Exception Message which provide the exact line number of error with error message.
+* Logger:-  To continously record the logs, which will help in monitoring the code, debugging the error and execution of program if any error is enountered.
 The project uses a modular approach, with different classes responsible for different functionalities, such as data ingestion, hotel list extraction, review extraction, and sentiment analysis.
+
 
 ### Prerequisites
 * Python 3.x
@@ -34,7 +38,7 @@ git clone https://github.com/your-username/hotel-review-sentiment-analysis.git
 
 * Run Data Ingestion.py file
 ``` 
-python data_ingestion.py 
+python run data_ingestion.py 
 ```
 
 
