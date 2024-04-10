@@ -122,6 +122,7 @@ class Reviews_Extraction:
                 data={}
 
         review_df=make_dataframe_from_records(hotel_reviews)
+        review_df['id']=review_df['id'].astype('int64')
         _name=input('Enter the name for the Review dataframe csv...')
         full_path=r'C:\Users\ankit\Desktop\HotelList\artifacts\data\{0}'.format(_name)
         save_dataframe(full_path,review_df)

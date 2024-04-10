@@ -110,7 +110,7 @@ if __name__=="__main__":
   obj4=Reviews_Extraction()
   review_df=obj4.initiate_review_extraction(df)
   obj5=Sentiment_Analysis()
-  review_df=obj5.sentiment_analysis(review_df)
-  obj5.aggregate_review_with_dataframe(review_df,df)
+  sentiment_df=obj5.sentiment_analysis()
+  obj5.aggregate_review_with_dataframe(sentiment_df,df)
 
   
