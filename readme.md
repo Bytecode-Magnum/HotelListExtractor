@@ -34,7 +34,7 @@ git clone https://github.com/your-username/hotel-review-sentiment-analysis.git
 
 * Run Data Ingestion.py file
 ``` 
-python run data_ingestion.py 
+python data_ingestion.py 
 ```
 
 
